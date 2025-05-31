@@ -1,4 +1,5 @@
-function generateNum(array) { //generate a number not higher than the array length
+function generateNum(array) {
+  //generate a number not higher than the array length
   return Math.floor(Math.random() * array.length);
 }
 
@@ -20,7 +21,7 @@ function generateBreakfast() {
 
   return `${component1[generateNum(component1)]}, ${
     component2[generateNum(component2)]
-  }, ${component3[generateNum(component3)]} en een ${
+  }, ${component3[generateNum(component3)]} en één ${
     component4[generateNum(component4)]
   }`;
 }
@@ -49,15 +50,16 @@ function generateSnack() {
 }
 
 function generateDinner() {
-  return `Eet wat er op de tafel ligt`;
+  return `Eet wat er op tafel ligt`;
 }
 
-function generateMeals() { //Combine all functions to generate meals for the day
-  return `We have generated meals for your day:
-  - Breakfast: ${generateBreakfast()};
+function generateMeals() {
+  //Combine all functions to generate meals for the day
+  return `We hebben maaltijden gegenereerd voor je:
+  - Ontbijt: ${generateBreakfast()};
   - Lunch: ${generateLunch()};
-  - Snack: ${generateSnack()};
-  - Dinner: ${generateDinner()}.`;
+  - Tussendoortje: ${generateSnack()};
+  - Avondeten: ${generateDinner()}.`;
 }
 
 console.log(generateMeals());
