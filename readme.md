@@ -2,7 +2,7 @@
 
 ## Requirements
 
-** Output a random message to the user **
+**Output a random message to the user**
 
 ## Technologies
 
