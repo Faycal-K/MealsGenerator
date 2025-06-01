@@ -10,6 +10,7 @@
 - Git
 - Command line
 - Visual studio Code
+- Run script in Node.js
 
 ## Description
 
